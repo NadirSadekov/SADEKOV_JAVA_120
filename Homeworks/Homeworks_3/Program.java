@@ -17,8 +17,6 @@ class Program {
         int number1 = scanner.nextInt();
         int productOfNumbers = 1;
 
-
-
         if( digitsSum % 2 == 0 ){
             while (number1 % 2 != 0) {
                 System.out.println("Please repeat");
@@ -27,9 +25,9 @@ class Program {
         }
 
         while(number1 != 0){
-                productOfNumbers *= number1 % 10;
-                number1 /= 10;
-            }
+            productOfNumbers *= number1 % 10;
+            number1 /= 10;
+        }
         System.out.println("Произведение чисел: " + productOfNumbers);
     } 
 }
